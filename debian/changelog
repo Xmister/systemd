@@ -254,6 +254,13 @@ systemd (229-4ubuntu21.9) xenial-security; urgency=medium
 
  -- Chris Coulson <chris.coulson@canonical.com>  Thu, 15 Nov 2018 21:02:00 +0000
 
+systemd (229-4ubuntu21.8-acquia2) xenial; urgency=medium
+
+  * ensure empty cgroup messages are not lost
+    (https://github.com/systemd/systemd/issues/1961)
+
+ -- Glenn Pratt <glenn.pratt@acquia.com>  Fri, 01 Dec 2017 14:09:48 -0800
+
 systemd (229-4ubuntu21.8-acquia1) xenial; urgency=medium
 
   * don't dispatch load queue when setting Slice= for transient units
