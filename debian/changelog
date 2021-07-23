@@ -1,3 +1,17 @@
+systemd (229-4ubuntu21.31+esm1) xenial-security; urgency=medium
+
+  [ Marc Deslauriers ]
+  * SECURITY UPDATE: DoS via DHCP FORCERENEW
+    - debian/patches/CVE-2020-13529.patch: tentatively ignore FORCERENEW
+      command in src/libsystemd-network/sd-dhcp-client.c.
+    - CVE-2020-13529
+  * SECURITY UPDATE: denial of service via stack exhaustion
+    - debian/patches/CVE-2021-33910.patch: do not use strdupa() on a path
+      in src/basic/unit-name.c.
+    - CVE-2021-33910
+
+ -- Leonidas Da Silva Barbosa <leo.barbosa@canonical.com>  Tue, 13 Jul 2021 10:31:23 -0300
+
 systemd (229-4ubuntu21.31) xenial; urgency=medium
 
   * d/p/lp1878969-time-epoch-use-source-date-epoch.patch:
